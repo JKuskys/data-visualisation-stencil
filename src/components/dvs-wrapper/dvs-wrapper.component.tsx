@@ -22,7 +22,7 @@ export class WrapperComponent {
 
   async onKeyChanged(key: string) {
     this.dataFetcher = setInterval(async () => {
-      await fetch(`http://localhost:3000/api/v1/widgets/data/${key}`, {
+      await fetch(`https://my-app-8mk4r.ondigitalocean.app/api/v1/widgets/data/${key}`, {
         method: 'GET',
         headers: {
           'Content-Type': 'application/json',

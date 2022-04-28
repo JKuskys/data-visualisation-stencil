@@ -1,6 +1,6 @@
 {
   "name": "data-visualisation-system-stencil",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Stencil Component Starter",
   "main": "dist/index.cjs.js",
   "module": "dist/index.js",
@@ -12,7 +12,7 @@
   "unpkg": "dist/data-visualisation-system-stencil/data-visualisation-system-stencil.esm.js",
   "repository": {
     "type": "git",
-    "url": "https://github.com/ionic-team/stencil-component-starter.git"
+    "url": "git@github.com:JKuskys/data-visualisation-system-stencil.git"
   },
   "files": [
     "dist/",
