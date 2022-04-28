@@ -1,5 +1,5 @@
 {
-  "name": "aa",
+  "name": "data-visualisation-system-stencil",
   "version": "0.0.1",
   "description": "Stencil Component Starter",
   "main": "dist/index.cjs.js",
@@ -9,7 +9,7 @@
   "types": "dist/types/index.d.ts",
   "collection": "dist/collection/collection-manifest.json",
   "collection:main": "dist/collection/index.js",
-  "unpkg": "dist/aa/aa.esm.js",
+  "unpkg": "dist/data-visualisation-system-stencil/data-visualisation-system-stencil.esm.js",
   "repository": {
     "type": "git",
     "url": "https://github.com/ionic-team/stencil-component-starter.git"
@@ -26,9 +26,12 @@
     "generate": "stencil generate"
   },
   "dependencies": {
-    "@stencil/core": "^2.13.0"
+    "@stencil/core": "^2.13.0",
+    "@stencil/react-output-target": "^0.3.1",
+    "chart.js": "^3.7.1"
   },
   "devDependencies": {
+    "@stencil/angular-output-target": "^0.4.0",
     "@types/jest": "^27.0.3",
     "jest": "^27.4.5",
     "jest-cli": "^27.4.5",

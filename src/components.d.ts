@@ -5,57 +5,167 @@
  * It contains typing information for all components that exist in this project.
  */
 import { HTMLStencilElement, JSXBase } from "@stencil/core/internal";
+import { IWidgetData } from "./components/dvs-wrapper/models/widget-data.interface";
 export namespace Components {
-    interface MyComponent {
+    interface DvsBarGraphComponent {
+        "height": number;
+        "widgetData": IWidgetData;
+        "width": number;
+    }
+    interface DvsIncorrectConfigComponent {
+    }
+    interface DvsLineGraphComponent {
+        "height": number;
+        "widgetData": IWidgetData;
         /**
-          * The first name
+          * Key of widget configuration
          */
-        "first": string;
+        "width": number;
+    }
+    interface DvsLoaderComponent {
+    }
+    interface DvsNoDataComponent {
+    }
+    interface DvsPieGraphComponent {
+        "height": number;
+        "widgetData": IWidgetData;
+        "width": number;
+    }
+    interface DvsPolarGraphComponent {
+        "height": number;
+        "widgetData": IWidgetData;
+        "width": number;
+    }
+    interface DvsWrapperComponent {
+        "height": number;
         /**
-          * The last name
+          * Key of widget configuration
          */
-        "last": string;
-        /**
-          * The middle name
-         */
-        "middle": string;
+        "widgetKey": string;
+        "width": number;
     }
 }
 declare global {
-    interface HTMLMyComponentElement extends Components.MyComponent, HTMLStencilElement {
+    interface HTMLDvsBarGraphComponentElement extends Components.DvsBarGraphComponent, HTMLStencilElement {
     }
-    var HTMLMyComponentElement: {
-        prototype: HTMLMyComponentElement;
-        new (): HTMLMyComponentElement;
+    var HTMLDvsBarGraphComponentElement: {
+        prototype: HTMLDvsBarGraphComponentElement;
+        new (): HTMLDvsBarGraphComponentElement;
+    };
+    interface HTMLDvsIncorrectConfigComponentElement extends Components.DvsIncorrectConfigComponent, HTMLStencilElement {
+    }
+    var HTMLDvsIncorrectConfigComponentElement: {
+        prototype: HTMLDvsIncorrectConfigComponentElement;
+        new (): HTMLDvsIncorrectConfigComponentElement;
+    };
+    interface HTMLDvsLineGraphComponentElement extends Components.DvsLineGraphComponent, HTMLStencilElement {
+    }
+    var HTMLDvsLineGraphComponentElement: {
+        prototype: HTMLDvsLineGraphComponentElement;
+        new (): HTMLDvsLineGraphComponentElement;
+    };
+    interface HTMLDvsLoaderComponentElement extends Components.DvsLoaderComponent, HTMLStencilElement {
+    }
+    var HTMLDvsLoaderComponentElement: {
+        prototype: HTMLDvsLoaderComponentElement;
+        new (): HTMLDvsLoaderComponentElement;
+    };
+    interface HTMLDvsNoDataComponentElement extends Components.DvsNoDataComponent, HTMLStencilElement {
+    }
+    var HTMLDvsNoDataComponentElement: {
+        prototype: HTMLDvsNoDataComponentElement;
+        new (): HTMLDvsNoDataComponentElement;
+    };
+    interface HTMLDvsPieGraphComponentElement extends Components.DvsPieGraphComponent, HTMLStencilElement {
+    }
+    var HTMLDvsPieGraphComponentElement: {
+        prototype: HTMLDvsPieGraphComponentElement;
+        new (): HTMLDvsPieGraphComponentElement;
+    };
+    interface HTMLDvsPolarGraphComponentElement extends Components.DvsPolarGraphComponent, HTMLStencilElement {
+    }
+    var HTMLDvsPolarGraphComponentElement: {
+        prototype: HTMLDvsPolarGraphComponentElement;
+        new (): HTMLDvsPolarGraphComponentElement;
+    };
+    interface HTMLDvsWrapperComponentElement extends Components.DvsWrapperComponent, HTMLStencilElement {
+    }
+    var HTMLDvsWrapperComponentElement: {
+        prototype: HTMLDvsWrapperComponentElement;
+        new (): HTMLDvsWrapperComponentElement;
     };
     interface HTMLElementTagNameMap {
-        "my-component": HTMLMyComponentElement;
+        "dvs-bar-graph-component": HTMLDvsBarGraphComponentElement;
+        "dvs-incorrect-config-component": HTMLDvsIncorrectConfigComponentElement;
+        "dvs-line-graph-component": HTMLDvsLineGraphComponentElement;
+        "dvs-loader-component": HTMLDvsLoaderComponentElement;
+        "dvs-no-data-component": HTMLDvsNoDataComponentElement;
+        "dvs-pie-graph-component": HTMLDvsPieGraphComponentElement;
+        "dvs-polar-graph-component": HTMLDvsPolarGraphComponentElement;
+        "dvs-wrapper-component": HTMLDvsWrapperComponentElement;
     }
 }
 declare namespace LocalJSX {
-    interface MyComponent {
+    interface DvsBarGraphComponent {
+        "height"?: number;
+        "widgetData"?: IWidgetData;
+        "width"?: number;
+    }
+    interface DvsIncorrectConfigComponent {
+    }
+    interface DvsLineGraphComponent {
+        "height"?: number;
+        "widgetData"?: IWidgetData;
         /**
-          * The first name
+          * Key of widget configuration
          */
-        "first"?: string;
+        "width"?: number;
+    }
+    interface DvsLoaderComponent {
+    }
+    interface DvsNoDataComponent {
+    }
+    interface DvsPieGraphComponent {
+        "height"?: number;
+        "widgetData"?: IWidgetData;
+        "width"?: number;
+    }
+    interface DvsPolarGraphComponent {
+        "height"?: number;
+        "widgetData"?: IWidgetData;
+        "width"?: number;
+    }
+    interface DvsWrapperComponent {
+        "height"?: number;
         /**
-          * The last name
+          * Key of widget configuration
          */
-        "last"?: string;
-        /**
-          * The middle name
-         */
-        "middle"?: string;
+        "widgetKey"?: string;
+        "width"?: number;
     }
     interface IntrinsicElements {
-        "my-component": MyComponent;
+        "dvs-bar-graph-component": DvsBarGraphComponent;
+        "dvs-incorrect-config-component": DvsIncorrectConfigComponent;
+        "dvs-line-graph-component": DvsLineGraphComponent;
+        "dvs-loader-component": DvsLoaderComponent;
+        "dvs-no-data-component": DvsNoDataComponent;
+        "dvs-pie-graph-component": DvsPieGraphComponent;
+        "dvs-polar-graph-component": DvsPolarGraphComponent;
+        "dvs-wrapper-component": DvsWrapperComponent;
     }
 }
 export { LocalJSX as JSX };
 declare module "@stencil/core" {
     export namespace JSX {
         interface IntrinsicElements {
-            "my-component": LocalJSX.MyComponent & JSXBase.HTMLAttributes<HTMLMyComponentElement>;
+            "dvs-bar-graph-component": LocalJSX.DvsBarGraphComponent & JSXBase.HTMLAttributes<HTMLDvsBarGraphComponentElement>;
+            "dvs-incorrect-config-component": LocalJSX.DvsIncorrectConfigComponent & JSXBase.HTMLAttributes<HTMLDvsIncorrectConfigComponentElement>;
+            "dvs-line-graph-component": LocalJSX.DvsLineGraphComponent & JSXBase.HTMLAttributes<HTMLDvsLineGraphComponentElement>;
+            "dvs-loader-component": LocalJSX.DvsLoaderComponent & JSXBase.HTMLAttributes<HTMLDvsLoaderComponentElement>;
+            "dvs-no-data-component": LocalJSX.DvsNoDataComponent & JSXBase.HTMLAttributes<HTMLDvsNoDataComponentElement>;
+            "dvs-pie-graph-component": LocalJSX.DvsPieGraphComponent & JSXBase.HTMLAttributes<HTMLDvsPieGraphComponentElement>;
+            "dvs-polar-graph-component": LocalJSX.DvsPolarGraphComponent & JSXBase.HTMLAttributes<HTMLDvsPolarGraphComponentElement>;
+            "dvs-wrapper-component": LocalJSX.DvsWrapperComponent & JSXBase.HTMLAttributes<HTMLDvsWrapperComponentElement>;
         }
     }
 }

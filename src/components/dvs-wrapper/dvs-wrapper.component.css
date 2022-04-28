@@ -1,0 +1,24 @@
+:host {
+  display: block;
+}
+
+.widget-container {
+  background: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 8px;
+  box-shadow: rgba(0, 0, 0, 0.15) 0px 8px 16px 0px;
+  border: 1px solid rgb(229, 231, 235);
+  border-radius: 8px;
+
+}
+
+.widget-container--actionable {
+  cursor: pointer;
+
+}
+
+.widget-container--actionable:hover {
+  background: rgb(79 70 229 / 8%)
+}
