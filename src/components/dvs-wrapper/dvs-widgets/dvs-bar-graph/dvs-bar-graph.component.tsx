@@ -19,7 +19,6 @@ export class BarGraphComponent {
   widgetData: IWidgetData;
   @Watch('widgetData')
   protected dataWatcher(newData: IWidgetData): void {
-    console.log(newData)
     this.myChartInstance.data.labels = newData?.data.map(item => item.label);
 
     this.myChartInstance.data?.datasets.forEach((dataset: any) => {

@@ -48,7 +48,6 @@ export class WrapperComponent {
   }
 
   disconnectedCallback() {
-    console.log('si');
     clearInterval(this.dataFetcher);
   }
 
